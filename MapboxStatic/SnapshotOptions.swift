@@ -284,7 +284,7 @@ open class SnapshotOptions: NSObject, SnapshotOptionsProtocol {
      - parameter camera: The viewpoint from which the snapshot is taken.
      - parameter size: The logical size of the image to output, measured in points.
      */
-    public init(styleURL: URL, camera: SnapshotCamera, size: CGSize) {
+    @objc public init(styleURL: URL, camera: SnapshotCamera, size: CGSize) {
         self.styleURL = styleURL
         self.camera = camera
         self.size = size
